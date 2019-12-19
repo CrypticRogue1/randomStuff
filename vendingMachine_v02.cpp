@@ -54,11 +54,13 @@ int main(){
     return 0;
 }
 float helpYes(float change, int helpFlag){
-    float itemCost;
-    float inMoney;
+    float itemCost = 0.00;
+    float inMoney = 0.00;
     int const ITEMS_VENDING = 6;
-    int helpFlag;
-    bool flag;
+    //Line 
+    string helpFlag; // <-- used when you're trying to get 'yes' or 'no'
+    bool flag; // <-- used when you want to change it to true or false when they put 'yes' or 'no'
+
     float change = 0.00;
     int items = 0;
     string itemNumbers[ITEMS_VENDING] = {"1", "2", "3", "4", "5", "6"};
