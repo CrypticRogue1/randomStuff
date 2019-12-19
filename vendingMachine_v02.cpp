@@ -20,40 +20,56 @@ Do:
 using namespace std;
 
 int main(){
-    float itemCost;
-    float change;
-    float inMoney;
-    int ITEMS_VENDING = 6;
-   
-    string MONEY_SIGN = "$";
-    string actualChange = MONEY_SIGN + change; //Huh? Why is the plus sign red?
-    string vendingItems[ITEMS_VENDING];
+//    float itemCost; // Needed in helpYes();
+//    float change = 0.00; // Needed in helpYes();
+//    float inMoney; // Needed in helpYes();
+//    int const ITEMS_VENDING = 6; // Needed in helpYes();
+//    int items = ITEMS_VENDING; // Needed in helpYes();
+//    string vendingItems[ITEMS_VENDING] = {"pepe", "popo", "peepee", "cake", "pastel", "chocolate"}; // Needed in helpYes;
     string helpYes();
-    string answer;
+    string answer; // ?
     string personName;
     
     cout << "Hello, enter your name?";
     cin >> personName;
     cout << "Do you need any help " << personName << "?" << endl;
     cin >> answer;
-
-    if(answer == "yes"){
-        cout << "Test to see if this works" << endl;     //helpYes();   <---- This is the function in the bottom.
+    
+    while(answer != "no"){
+        if(answer != "yes" && answer != "no"){
+            cout << "Please enter 'yes' to continue the program or 'no' to quit.";
+            cin >> answer;
+        }
+        if(answer == "yes"){
+            helpYes(); // The output should be to see if 'yes' of 'no' for the next loop  
+        }
+        /* else{
+            cout << "Your change is: " << change << endl;
+            cout << "Thank you for vending. Hace a nice day!";
+        } */
     }
-    else if(answer != "yes" && answer != "no"){
-        cout << "Please enter 'yes' to continue the program or not to quit.";
-        cin >> answer;
-    }
-    else{
-        cout << "Your change is: " << change << endl;
-        cout << "Thank you for vending. Hace a nice day!";
-    }
-
+    cout << "Your change is: " << change << endl;
+    cout << "Thank you for vending. Have a nice day! ";
 
     return 0;
 }
 string helpYes(){
+    float itemCost;
+    float change = 0.00;
+    float inMoney;
+    int const ITEMS_VENDING = 6;
+    int items = 0;
+    int const column = 3;
+    string letters[column] = {"A", "B", "C"};
+    string vendingItems[ITEMS_VENDING] = {"pepe", "popo", "peepee", "cake", "pastel", "chocolate"};
     string answer2;
+    
+    cout << "These are the items I have: " << endl;
+    
+    for(int items = 0; items < ITEMS_VENDING; items++){
+        cout << letters[column] << " " << vendingItems[items]
+    }
+
 
 
 return answer2;
