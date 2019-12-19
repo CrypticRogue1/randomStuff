@@ -18,6 +18,7 @@ Do:
 #include <iostream>
 #include <string>
 using namespace std;
+void helpYes();
 
 int main(){
 //    float itemCost; // Needed in helpYes();
@@ -48,29 +49,28 @@ int main(){
             cout << "Thank you for vending. Hace a nice day!";
         } */
     }
-    cout << "Your change is: " << change << endl;
+    cout << "Your change is: " << change << endl; // Need to change this so that it shows only for the yes one and not for the no one because then it's going to use it for both.
     cout << "Thank you for vending. Have a nice day! ";
 
     return 0;
 }
-string helpYes(){
+void helpYes(){
     float itemCost;
     float change = 0.00;
     float inMoney;
     int const ITEMS_VENDING = 6;
     int items = 0;
-    int const column = 3;
-    string letters[column] = {"A", "B", "C"};
+    string itemNumbers[ITEMS_VENDING] = {"1", "2", "3", "4", "5", "6"};
     string vendingItems[ITEMS_VENDING] = {"pepe", "popo", "peepee", "cake", "pastel", "chocolate"};
     string answer2;
     
     cout << "These are the items I have: " << endl;
     
     for(int items = 0; items < ITEMS_VENDING; items++){
-        cout << letters[column] << " " << vendingItems[items]
+        cout << vendingItems[items];
     }
 
 
 
-return answer2;
+return;
 }
