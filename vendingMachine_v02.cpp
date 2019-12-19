@@ -18,7 +18,7 @@ Do:
 #include <iostream>
 #include <string>
 using namespace std;
-void helpYes();
+int helpYes(int change, int helpFlag);
 
 int main(){
 //    float itemCost; // Needed in helpYes();
@@ -27,7 +27,6 @@ int main(){
 //    int const ITEMS_VENDING = 6; // Needed in helpYes();
 //    int items = ITEMS_VENDING; // Needed in helpYes();
 //    string vendingItems[ITEMS_VENDING] = {"pepe", "popo", "peepee", "cake", "pastel", "chocolate"}; // Needed in helpYes;
-    string helpYes();
     string answer; // ?
     string personName;
     
@@ -49,25 +48,27 @@ int main(){
             cout << "Thank you for vending. Hace a nice day!";
         } */
     }
-    cout << "Your change is: " << change << endl; // Need to change this so that it shows only for the yes one and not for the no one because then it's going to use it for both.
+    cout << "Your change is: " << /* change << */ endl; // Need to change this so that it shows only for the yes one and not for the no one because then it's going to use it for both.
     cout << "Thank you for vending. Have a nice day! ";
 
     return 0;
 }
-void helpYes(){
+float helpYes(float change, int helpFlag){
     float itemCost;
-    float change = 0.00;
     float inMoney;
     int const ITEMS_VENDING = 6;
+    int helpFlag;
+    bool flag;
+    float change = 0.00;
     int items = 0;
     string itemNumbers[ITEMS_VENDING] = {"1", "2", "3", "4", "5", "6"};
     string vendingItems[ITEMS_VENDING] = {"pepe", "popo", "peepee", "cake", "pastel", "chocolate"};
-    string answer2;
+    float ;
     
     cout << "These are the items I have: " << endl;
     
     for(int items = 0; items < ITEMS_VENDING; items++){
-        cout << vendingItems[items];
+        cout << itemNumbers[items] << "_" << vendingItems[items] << endl;
     }
 
 
