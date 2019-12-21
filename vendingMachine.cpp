@@ -77,6 +77,8 @@ int main(){
 //
 //
 //
+
+/*
     if(helpAnswer == "yes"){
 
     }
@@ -114,7 +116,7 @@ int main(){
 
         }
     }
-    
+    */
 
 
 
