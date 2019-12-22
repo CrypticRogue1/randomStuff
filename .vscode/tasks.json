@@ -2,10 +2,10 @@
     "version": "2.0.0",
     "tasks": [
       {
-        "label": "build hello world",
+        "label": "echo",
         "type": "shell",
         "command": "g++",
-        "args": ["-g", "-o", "helloworld", "helloworld.cpp"],
+        "args": ["-g", "main.cpp"],
         "group": {
           "kind": "build",
           "isDefault": true

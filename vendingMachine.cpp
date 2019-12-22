@@ -19,7 +19,7 @@ int main(){
     int const ITEMS = 3;
     string vendingItems[ITEMS] = {"Ice_cream", "Cake", "Cookies"};
     double vendingPrices[ITEMS] = {00.50, 2.00, 1.50};
-    string vendingNumbers[ITEMS];
+    double endingNumbers[ITEMS];
     string helpAnswer;
     string choice;
     int items;
