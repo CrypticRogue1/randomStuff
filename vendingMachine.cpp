@@ -42,7 +42,7 @@ int main(){
         cout << "These are the things I have: " << endl;
             // So I've seen that this might loop forever (?) I feel like I need an actual compiler on this so I can test it better. 
             // I'll have to download the visual studio too.
-        for(items = 0; vendingItems[items] < vendingItems[ITEMS]; items++){
+        for(items = 0; vendingItems[items] < vendingItems[ITEMS]; items++){ // maybe just put items ins=tead of vendingItems[items]?
             cout << vendingNumbers[items + 1] << ". " << vendingItems[items] << "$" << vendingPrices[items] << endl;
         }
 
